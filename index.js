@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 4000;
 const monk=require("monk");
 const bodyParser=require("body-parser");
 const cors=require("cors");
@@ -43,7 +43,7 @@ app.get('/', async function (req, res,next) {
   
   //Works per postman 10-16
   //This is the put endpoint which acts the method to UPDATE
-  app.put('/:id', async function (req, res){
+  app.put('/image/:id', async function (req, res){
     const data = req.body
     console.log('data',data) 
     const results = await images.update({_id:req.params.id}, {$set: data});//req is request -id property expected to be in database study request parameters
@@ -57,7 +57,7 @@ app.get('/', async function (req, res,next) {
   
 //Works per postman 10-16
 // This is the delete endpoint or DELETE method
-  app.delete('/:id', async function (req, res){
+  app.delete('/image/:id', async function (req, res){
     const results = await images.remove ({_id:req.params.id});
     console.log('deleteImage')
     res.send(results)

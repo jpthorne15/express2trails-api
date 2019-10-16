@@ -1,7 +1,6 @@
 {
   "name": "express2trails-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
@@ -15,5 +14,15 @@
     "express": "^4.17.1",
     "monk": "^7.1.1",
     "nodeman": "^1.1.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpthorne15/express2trails-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jpthorne15/express2trails-api/issues"
+  },
+  "homepage": "https://github.com/jpthorne15/express2trails-api#readme",
+  "description": ""
 }
