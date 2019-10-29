@@ -68,7 +68,7 @@ app.get('/', async function (req, res,next) {
 // This is the delete endpoint or DELETE method
   app.delete('/image/:id', async function (req, res){
     const results = await images.remove ({_id:req.params.id});
-    // remove by finding the Mongo id then request the parameter id of the item
+    // remove by finding the Mongo id then request the parameter id of the item remove method is Monk
     console.log('deleteImage')
     res.send(results)
   })
